@@ -1,0 +1,15 @@
+
+(add-hook 'tex-mode-hook 
+	  (lambda ()
+	    (define-key tex-mode-map "\C-o" 'other-window)
+	    (define-key tex-mode-map "\C-c\C-v" 'split-window-vertically)
+	    (define-key tex-mode-map "\C-c\C-h" 'split-window-horizontally)
+	    (define-key tex-mode-map "\C-c\C-d" 'delete-other-windows)
+	    (define-key tex-mode-map "\C-j" 'fastdown)
+	    (define-key tex-mode-map "\C-h" 'fastup)
+	    (define-key tex-mode-map "\C-l" 'next-buffer)
+	    (define-key tex-mode-map "\M-l" 'previous-buffer)
+	    (define-key tex-mode-map "\C-c\C-q" (lambda () (interactive) (kill-buffer nil)))
+	    (define-key tex-mode-map "\C-c\C-l" (lambda () (interactive) (shell "/bin/bash") (rename-uniquely)))
+	    (define-key tex-mode-map "\C-c\C-r" 'query-replace)
+	    ))

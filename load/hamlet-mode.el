@@ -1,0 +1,2 @@
+
+(require 'hamlet-mode)
