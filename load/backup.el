@@ -1,2 +1,2 @@
 
-(setq backup-directory-alist `((".*" . ,"~/.emacs.d/saves")))
+(setq backup-directory-alist `((".*" . ,(concat emacs-dir "/saves"))))
