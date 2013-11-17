@@ -1,1 +1,2 @@
-(dolist (file (directory-files (concat emacs-dir "/global") t ".*\.el$" t)) (load-file file))
+(defvar emacs-dir "~/.emacs.d")
+(dolist (file (directory-files (concat emacs-dir "/globals") t ".*\.el$" t)) (load-file file))
