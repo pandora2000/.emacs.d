@@ -14,18 +14,20 @@
   (define-key map "\C-c\C-r" 'query-replace)
   (define-key map "\C-c\C-o" 'comment-region)
   (define-key map "\C-c\C-p" 'uncomment-region)
+  (define-key map "\C-c\C-t" 'open-current-directory-in-tmux-new-window)
   (define-key map "\C-v" 'undo-tree-undo)
   (define-key map "\M-v" 'undo-tree-redo)
   (define-key map "\C-w" 'kill-region)
   (define-key map "\M-w" 'kill-ring-save)
   (define-key map "\C-y" 'yank)
-  
+  (define-key map "\C-t" nil)
+
   (define-key map [C-mouse-4] 'increase-font-size)
   (define-key map [C-wheel-up] 'increase-font-size)
   (define-key map [?\C-+] 'increase-font-size)
-  
+
   (define-key map [?\C-=] 'set-default-font-size)
-  
+
   (define-key map [C-mouse-5] 'decrease-font-size)
   (define-key map [C-wheel-down] 'decrease-font-size)
   (define-key map [?\C--] 'decrease-font-size)
