@@ -1,0 +1,1 @@
+(auto-compression-mode t)

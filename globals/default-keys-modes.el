@@ -1,2 +1,2 @@
 (defvar default-keys-modes
-  (list 'latex 'tex 'ruby 'yaml 'haml 'haskell 'lisp))
+  (list 'latex 'tex 'ruby 'yaml 'haml 'haskell 'lisp 'hexl))
